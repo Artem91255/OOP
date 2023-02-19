@@ -10,4 +10,7 @@ public class Sniper extends SomeHero  {
         super(name, 80, 10, 15, 8);
          
     }
+
+    public void getDamage() {
+    }
 }

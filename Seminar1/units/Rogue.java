@@ -10,5 +10,8 @@ public class Rogue extends SomeHero  {
         super(name, 80, 10, 15, 8);
          
     }
+
+    public void getDamage() {
+    }
     
 }
