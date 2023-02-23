@@ -1,8 +1,6 @@
 package Seminar3.units;
 
-import java.util.Comparator;
 
-import Seminar3.units.SomeHero;
 
 public class Peasant extends Civilian {
     int delivery;

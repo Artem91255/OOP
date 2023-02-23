@@ -1,6 +1,6 @@
 package Seminar3.units;
 
-import Seminar3.units.SomeHero;
+
 
 public class XBowman extends Ranger{
     double poisonedArrow;
