@@ -4,9 +4,7 @@ package Seminar5.units;
 public class Sniper extends Ranger {
     
 
-    // public double getDamage(){
-    //     return super.damage;
-    // }
+
 
     public Sniper (String name, int team, int xCoordinate, int yCoordinate)
     {

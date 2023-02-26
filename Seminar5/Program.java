@@ -26,19 +26,19 @@ public class Program {
             switch(randomNumber){
                 case 0:
                         team1.add(new Peasant(getName(),1,randomPlaceForFirstTeam,i));
-                       // team3.add(new Peasant(getName(),1,randomPlaceForFirstTeam,i));
+
                         break;
                 case 1:
                         team1.add(new Pikeman(getName(),1,randomPlaceForFirstTeam,i));
-                      //  team3.add(new Pikeman(getName(),1,randomPlaceForFirstTeam,i));
+
                         break;
                 case 2:
                         team1.add(new XBowman(getName(),1,randomPlaceForFirstTeam,i));
-                     //   team3.add(new Pikeman(getName(),1,randomPlaceForFirstTeam,i));
+
                         break;
                 case 3:
                         team1.add(new Monk(getName(),1, randomPlaceForFirstTeam, i));
-                        //team3.add(new Monk(getName(),1,randomPlaceForFirstTeam,i));
+
                         break;
             }
      
@@ -51,27 +51,27 @@ public class Program {
             if(randomNumber==4)
                 {
                     team2.add(new Sniper(getName(), 2,randomPlaceForSecondTeam,i));
-                  //  team3.add(new Sniper(getName(), 2,randomPlaceForSecondTeam,i));
+
                 }
                 if(randomNumber==5)
                 {
                     team2.add(new Rogue(getName(), 2,randomPlaceForSecondTeam,i));
-                   // team3.add(new Rogue(getName(), 2,randomPlaceForSecondTeam,i));
+
                 }
                 if(randomNumber==6)
                 {
                     team2.add(new Wizard(getName(), 2,randomPlaceForSecondTeam,i));
-                   // team3.add(new Wizard(getName(), 2,randomPlaceForSecondTeam,i));
+
                 }
                 if(randomNumber==7)
                 {
                     team2.add(new Peasant(getName(), 2,randomPlaceForSecondTeam,i));
-                   // team3.add(new Peasant(getName(), 2,randomPlaceForSecondTeam,i));
+
                 }
         }
         team3.addAll(team1);
         team3.addAll(team2);
-        //team3.sort(new SpeedComparator());
+
         sortTeam(team3);
 
 
@@ -89,11 +89,6 @@ public class Program {
 
 
 
-//        for(SomeHero someHero: team3)
-//        {
-//            if(team1.contains(someHero)) someHero.stepMove(team1, team2);
-//            else someHero.stepMove(team2, team1);
-//        }
     }
 
 
