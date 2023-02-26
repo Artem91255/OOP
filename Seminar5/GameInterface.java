@@ -1,6 +1,6 @@
-package Seminar4;
+package Seminar5;
 
-import Seminar4.units.SomeHero;
+import Seminar5.units.SomeHero;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,6 @@
-package Seminar4.units;
+package Seminar5.units;
+
+import java.util.ArrayList;
 
 public abstract class Witch extends SomeHero {
     protected int magic;
@@ -10,5 +12,28 @@ public abstract class Witch extends SomeHero {
         this.damage = damage;
         this.magic = magic;
     }
-    
+    protected SomeHero findSickUnit(ArrayList<SomeHero> team)
+    {
+        double minHp = Double.MAX_VALUE;
+        int index = 0;
+        for(int i = 0; i<team.size(); i++)
+        {
+            if(minHp> team.get(i).maxHp - team.get(i).hp)
+            {
+                index = i;
+                minHp = team.get(i).maxHp - team.get(i).hp;
+            }
+        }
+        return team.get(index);
+    }
+    @Override
+    public void stepMove(ArrayList<SomeHero> team1, ArrayList<SomeHero> team2)
+    {
+        if (state.equals("Die") || magic<=0) return;
+        SomeHero target = findSickUnit(team1);
+
+        target.getDamage(damage);
+        magic -= 1;
+
+    }
 }

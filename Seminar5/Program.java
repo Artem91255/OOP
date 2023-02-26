@@ -1,10 +1,11 @@
-package Seminar4;
+package Seminar5;
 
-import Seminar4.units.*;
+import Seminar5.units.*;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Program {
     static final int UNITS = 10;
@@ -13,6 +14,7 @@ public class Program {
         ArrayList<SomeHero> team1 = new ArrayList<>();
         ArrayList<SomeHero> team2 = new ArrayList<>();
         ArrayList<SomeHero> team3 = new ArrayList<>();
+        Scanner user_input = new Scanner(System.in);
         Random random = new Random();
 
         for (int i = 0; i<UNITS; i++)
@@ -71,13 +73,27 @@ public class Program {
         team3.addAll(team2);
         //team3.sort(new SpeedComparator());
         sortTeam(team3);
-        team3.forEach(n -> System.out.println(n.getInfo()));
 
-        for(SomeHero someHero: team3)
+
+        String stop = "";
+        while(stop.equals(""))
         {
-            if(team1.contains(someHero)) someHero.stepMove(team1, team2);
-            else someHero.stepMove(team2, team1);
+            for (SomeHero hero: team3)
+            {
+                if (team1.contains(hero)) hero.stepMove(team1, team2);
+                else hero.stepMove(team2, team1);
+            }
+            team3.forEach(n -> System.out.println(n.getInfo()));
+            stop = user_input.nextLine();
         }
+
+
+
+//        for(SomeHero someHero: team3)
+//        {
+//            if(team1.contains(someHero)) someHero.stepMove(team1, team2);
+//            else someHero.stepMove(team2, team1);
+//        }
     }
 
 

@@ -1,4 +1,4 @@
-package Seminar4.units;
+package Seminar5.units;
 
 
 public class XBowman extends Ranger {

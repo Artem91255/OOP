@@ -1,4 +1,4 @@
-package Seminar4.units;
+package Seminar5.units;
 
 
 public class Sniper extends Ranger {
@@ -16,7 +16,7 @@ public class Sniper extends Ranger {
     @Override
     public StringBuilder getInfo() {
         StringBuilder builder = new StringBuilder();
-        return builder.append("Снайпер:\t").append(Sniper.super.name)
+        return builder.append("Снайпер:\t\t").append(Sniper.super.name)
                 .append("\t| ATK:\t").append(Sniper.super.attack)
                 .append("\t| HP:\t").append(Sniper.super.hp)
                 .append(" \t| Arrows:").append(Sniper.super.shots)

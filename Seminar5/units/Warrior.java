@@ -1,4 +1,4 @@
-package Seminar4.units;
+package Seminar5.units;
 
 public abstract class Warrior extends SomeHero {
     protected int minDamage;

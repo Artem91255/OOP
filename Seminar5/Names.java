@@ -1,5 +1,5 @@
-package Seminar4;
+package Seminar5;
 
 public enum Names {
-    Вася, Оля, Коля, Дима, Петя, Соня, Андрей, Алёна, Ася
+    Artem, Alex, Denis, Vlad, Dima, Anna, Roman, Mira, Nika
 }

@@ -1,4 +1,4 @@
-package Seminar4.units;
+package Seminar5.units;
 
 
 public class Rogue extends Warrior {
@@ -15,7 +15,7 @@ public class Rogue extends Warrior {
     @Override
     public StringBuilder getInfo() {
         StringBuilder builder = new StringBuilder();
-        return builder.append("Бандит: \t").append(Rogue.super.name)
+        return builder.append("Бандит: \t\t").append(Rogue.super.name)
                 .append("\t| ATK:\t").append(Rogue.super.attack)
                 .append("\t| HP:\t").append(Rogue.super.hp)
                 .append(" \t|\t\t\t|").append("\t| (X.Y) : ").append(Rogue.super.coord.xCoordinate).append(".").append(Rogue.super.coord.yCoordinate);

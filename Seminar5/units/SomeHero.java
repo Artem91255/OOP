@@ -1,7 +1,7 @@
-package Seminar4.units;
+package Seminar5.units;
 
 
-import Seminar4.GameInterface;
+import Seminar5.GameInterface;
 
 import java.util.ArrayList;
 
