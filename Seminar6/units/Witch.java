@@ -27,13 +27,12 @@ public abstract class Witch extends SomeHero {
         return team.get(index);
     }
     @Override
-    public void stepMove(ArrayList<SomeHero> team1, ArrayList<SomeHero> team2)
-    {
-        if (state.equals("Die") || magic<=0) return;
-        SomeHero target = findSickUnit(team1);
-
-        target.getDamage(damage);
-        magic -= 1;
-
+    public void stepMove(ArrayList<SomeHero> team1, ArrayList<SomeHero> team2) {
+        for (SomeHero someHero: team1) {
+            if (someHero.hp < someHero.maxHp & !someHero.state.equals("Die")) {
+                someHero.getDamage(damage);
+                return;
+            }
+        }
     }
 }
