@@ -72,7 +72,7 @@ public abstract class SomeHero implements GameInterface, Comparable<SomeHero> {
         int index = 0;
         for(int i = 0; i<team.size(); i++)
         {
-            if(min> coord.findCoordinates(team.get(i).coord))
+            if(min> coord.findCoordinates(team.get(i).coord) && !team.get(i).state.equals("Die"));
             {
                 index = i;
                 min = coord.findCoordinates(team.get(i).coord);
