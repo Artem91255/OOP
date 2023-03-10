@@ -64,7 +64,7 @@ public abstract class SomeHero implements GameInterface, Comparable<SomeHero> {
 
 
     @Override
-    public void stepMove(ArrayList<SomeHero> team1, ArrayList<SomeHero> team2){}
+    public void stepMove(ArrayList<SomeHero> team1, ArrayList<SomeHero> team2) {}
 
     protected int findNearest(ArrayList<SomeHero> team)
     {

@@ -59,6 +59,7 @@ public class Program {
                         team.add(new XBowman(getName(), i + 1, yCoord));
                         break;
                     case (5):
+                        //team.add(new XBowman(getName(), i + 1, yCoord));
                         team.add(new Monk(getName(), i + 1, yCoord));
                         break;
                     case (6):

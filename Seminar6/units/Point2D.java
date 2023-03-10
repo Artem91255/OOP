@@ -21,4 +21,8 @@ public class Point2D {
     {
         return Math.sqrt(Math.pow(xCoordinate - oponent.xCoordinate,2) + Math.pow(yCoordinate - oponent.yCoordinate,2));
     }
+    protected Point2D chooseWay(Point2D opponent) {
+
+        return new Point2D(xCoordinate - opponent.xCoordinate, yCoordinate - opponent.yCoordinate);
+    }
 }

@@ -15,6 +15,7 @@ public abstract class Civilian extends SomeHero {
 
     @Override
     public void stepMove(ArrayList<SomeHero> team1, ArrayList<SomeHero> team2) {
-        if (!state.equals("Die")) state = "Stand";
+        if (!state.equals("Die")) {state = "Stand"; return;}
+
     }
 }

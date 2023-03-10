@@ -6,7 +6,7 @@ public class Rogue extends Warrior {
 
     public Rogue(String name, int xCoordinate, int yCoordinate)
     {
-        super(8, 3, 2, 4, 70.f, 70, 6, name, xCoordinate, yCoordinate);
+        super(10, 3, 2, 4, 70.f, 70, 6, name, xCoordinate, yCoordinate);
          
     }
     public double getDamage(){
